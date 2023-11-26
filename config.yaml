@@ -1,0 +1,17 @@
+baseurl: https://www.atypicaldeveloper.com
+languageCode: en-ca
+theme: hugo-theme-stack
+paginate: 5
+title: A Typical Developer
+copyright: River Wang
+
+languages:
+    en:
+        languageName: English
+        title: A Typical Developer
+        weight: 1
+        params:
+            description: Standing out as a typical person in an atypical industry.
+
+DefaultContentLanguage: en
+
