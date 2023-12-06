@@ -1,5 +1,6 @@
 baseurl: https://www.atypicaldeveloper.com
 languageCode: en-ca
+
 theme: hugo-theme-stack
 paginate: 5
 title: A Typical Developer
@@ -15,3 +16,15 @@ languages:
 
 DefaultContentLanguage: en
 
+disqusShortname: 
+googleAnalytics:
+
+hasCJKLanguage: false
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - post 
