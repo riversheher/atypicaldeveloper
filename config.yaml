@@ -1,6 +1,5 @@
 baseurl: https://www.atypicaldeveloper.com
 languageCode: en-ca
-
 theme: hugo-theme-stack
 paginate: 5
 title: A Typical Developer
@@ -28,3 +27,92 @@ permalinks:
 params:
     mainSections:
         - post 
+    featuredImageField: image
+    rssFullContent: true
+    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+
+    footer:
+        since: 2023
+        customText: 
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        emoji: 🍥
+        subtitle: A blog about an average and typical nerd navigating the tech industry.
+        avatar:
+            enabled: true
+            local: true
+            src: mesq.png
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: false
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: true
+        provider: disqus
+
+        disqusjs:
+            shortname:
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: dark
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+menu:
+    main: 
+        - identifier: about
+          name: About
+          url: /about
+          weight: 100
+          params: 
+            icon: user
+            newTab: false
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/riversheher
+          params:
+              icon: brand-github
+
+        - identifier: linkedin
+          name: Linkedin
+          url: https://www.linkedin.com/in/river-wang/
+          params:
+              icon: brand-linkedin
