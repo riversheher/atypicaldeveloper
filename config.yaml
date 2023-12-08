@@ -45,7 +45,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: mesq.png
+            src: Frieren_sq.png
 
     article:
         math: false
