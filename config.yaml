@@ -11,7 +11,7 @@ languages:
         title: A Typical Developer
         weight: 1
         params:
-            description: Standing out as a typical person in an atypical industry.
+            description: Being atypical is only one white space away from being a typical.
 
 DefaultContentLanguage: en
 
@@ -41,7 +41,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: A blog about an average and typical nerd navigating the tech industry.
+        subtitle: A humble blog about navigating life and work as a typical atypical woman.
         avatar:
             enabled: true
             local: true
