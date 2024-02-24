@@ -95,14 +95,7 @@ params:
             enabled: true
 
 menu:
-    main: 
-        - identifier: about
-          name: About
-          url: /about
-          weight: 100
-          params: 
-            icon: user
-            newTab: false
+    main:  []
 
     social:
         - identifier: github
