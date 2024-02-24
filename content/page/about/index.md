@@ -22,11 +22,11 @@ This blog, atypicaldeveloper.com is meant to be read in two ways:
 1. A typical developer
 2. Atypical developer
 
-This duality may seem like a contradiction at first, like a mistake any one of us  might make when we forget to add a white space in code, or maybe I just didn't find a good website name.  However the meaning behind the name invites us to look a little further than that.
+This duality may seem like a contradiction at first, like a mistake any one of us  might make when we forget to add a white space in code.  However, the meaning behind the name invites us to look a little further than that.
 
-This is a metaphor for us in the tech industry.  An industry filled with ego and imposter syndrome.  Our industry pushes us towards this path, where we all see ourselves as better than our peers for one reason or another...  Maybe you like Rust and you can't stand those garbage collected programming languages, or you LOVE monorepos and you follow every article about how they're superior over other methods.  I get it.  I let my ego get to me too, sometimes it feels like having a big ego in this competitive industry is a matter of survival.
+This is a metaphor for us in the tech industry.  An industry filled with ego and imposter syndrome.  Our industry pushes us towards this path, where we all see ourselves as better than our peers for one reason or another... The reality is we are all more average than we like to think... that's just how averages work.  But being average doesn't mean that we can't be unique and find success.
 
-This blog's focus is about staying humble and introspective.  I'm just an average person in the tech industry after all.  I'm not some unicorn or a star software developer.  I'm simply a typical developer navigating this world.  I feel that being honest with myself is the best way to deal with imposter syndrome and grow in both life and career.  I want to recognize what makes me special, unique and "atypical" while staying grounded.
+This blog's focus is about staying humble and introspective.  I'm just an average person in the tech industry after all.  I'm not some unicorn or a star software developer.  I'm simply a typical developer navigating this world.  I feel that being honest with ourselves is the best way to deal with imposter syndrome and grow in both life and our careers.  I want to recognize what makes us special, unique and "atypical" while staying grounded.
 
 I hope that you can come along in my journey!
 
