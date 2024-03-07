@@ -10,15 +10,13 @@ comments: false
 draft: false
 tags: [
     "transgender",
-    "surgery",
+    "medical",
     "Thailand",
     "travel",
-    "reflection",
     "spirituality"
 ]
 categories: [
-    "diary",
-    "medical"
+    "Diaries"
 ]
 series: ["Surgical Diaries"]
 ---
