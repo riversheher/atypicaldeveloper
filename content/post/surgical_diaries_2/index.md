@@ -6,8 +6,8 @@ image: "lumphini.JPG"
 math: false
 license: true
 hidden: false
-comments: true
-draft: true
+comments: false
+draft: false
 tags: [
     "transgender",
     "medical",
