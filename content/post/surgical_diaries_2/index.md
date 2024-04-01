@@ -1,5 +1,5 @@
 ---
-title: "Surgery Diaries 2"
+title: "Surgery Diaries 2: One Month of Joy"
 description: One month after facial feminization surgery, I'm feeling a lot better.  As I gaze into the mirror, I ponder questions about what this experience has taught me about the importance of medical treatment for transgender women.  This post deals with some heavy content, so there are some images I took while out and about in Bangkok offering you a nice break in between sections.
 date: 2024-03-23T20:39:07+07:00
 image: "lumphini.JPG"
