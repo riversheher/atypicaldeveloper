@@ -15,7 +15,7 @@ categories: [
 ]
 hidden: false
 comments: false
-draft: true
+draft: false
 ---
 
 If you’ve ever worked remotely, you’ve likely felt the pressure to turn your camera on when you didn’t want to. It’s a common occurrence. Maybe you stayed out a little too late on Sunday night, had a bit too much tequila, and didn’t get to sleep until 3 AM. You wake up after snoozing your alarm four times, realizing, “Oh no, it’s 8:50 AM., and I have a meeting with the offshore team in 10 minutes.” Your hair is a mess, and you have dark circles under your eyes. You don’t want to turn on your camera, but you do anyways because your manager is pushing for more team engagement.
