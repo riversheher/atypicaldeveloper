@@ -1,3 +1,4 @@
+---
 title: "Cameras On? No Thanks!"
 description: How cameras on meetings can actually work against the benefits of a remote work environment towards diversity, equity, inclusion, and belonging.  From the perspective of a transgender woman.
 date: 2024-08-06T21:01:58-04:00
