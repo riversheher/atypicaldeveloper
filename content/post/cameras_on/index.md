@@ -1,4 +1,3 @@
----
 title: "Cameras On? No Thanks!"
 description: How cameras on meetings can actually work against the benefits of a remote work environment towards diversity, equity, inclusion, and belonging.  From the perspective of a transgender woman.
 date: 2024-08-06T21:01:58-04:00
@@ -65,3 +64,4 @@ One company I worked for had many employees across the globe, but mostly in smal
 ## TL;DR
 
 Mandatory "cameras on" meetings can be harmful for gender diverse individuals, triggering gender dysphoria and increasing anxiety. Women, especially transgender women, face heightened scrutiny and pressure to conform to beauty standards, which can be emotionally and financially taxing. Instead of relying on "cameras on" policies, employers should explore creative and inclusive strategies for employee engagement. These include virtual icebreakers, collaborative tools, and flexible communication channels. These approaches foster a more supportive and productive remote work environment for all employees.
+
