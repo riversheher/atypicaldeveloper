@@ -17,7 +17,7 @@ hidden: false
 comments: false
 draft: false
 ---
-Well, here we are.  Boycotting American products eh?  If you drink a lot of American liquor, it might feel a little bitter (with an alcoholic aftertaste) to be losing something you have enjoyed for a long time.  Why not try tequila?  Tequila is an often misunderstood drink don’t you know...  It’s seen as a party drink that is meant to lubricate you for socialization as quickly as possible, or to be mixed away into a fruity drink.  Although there’s no wrong way to enjoy this great drink, many tequila enthusiasts prefer to enjoy tequila by sipping slowly and appreciating the finer details—as you would with a fine wine.  If you choose the right bottles, you might even find the same tones and flavours you are already familiar with in American liquor such as: Bourbon, or Tennessee whisky.
+Well, here we are.  Boycotting American products eh?  If you drink a lot of American liquor, it might feel a little bitter (with an alcoholic aftertaste) to be losing something you have enjoyed for a long time.  Why not try tequila?  Tequila is an often misunderstood drink don’t you know?  It’s seen as a party drink that is meant to lubricate you for socialization as quickly as possible, or to be mixed away into a fruity drink.  Although there’s no wrong way to enjoy this great drink, many tequila enthusiasts prefer to enjoy tequila by sipping slowly and appreciating the finer details—as you would with a fine wine.  If you choose the right bottles, you might even find the same tones and flavours you are already familiar with in American liquor such as: Bourbon, or Tennessee whisky.
 
 ![Different bottles of tequila with varying degrees of golden hues](tequila_bottles.webp)
 
@@ -26,7 +26,7 @@ Tequila comes from the Tequila region in Jalisco Mexico.  It comes from the agav
 
 ![A farmer shucking a large agave, preparing it for making Tequila](agave_shucking.webp)
 
-The long process of growing and tending agave plants, kicks off the production of tequila.  It can take up to 7 years for agave to reach maturity.  After they are harvested, the **aging**, **cooking**, and **distillation** processes produce the drink we are interested in: Tequila!  Differences in these processes are what make every bottle of tequila unique.  
+The long process of growing and tending agave plants kicks off the production of tequila.  It can take up to 7 years for agave to reach maturity.  After they are harvested, the **aging**, **cooking**, and **distillation** processes produce the drink we are interested in: Tequila!  Differences in these processes are what make every bottle of tequila unique.  
 
 ## The Classifications
 There are many different classifications of tequila that describe the length of time it has been aged: **Blanco**, **Reposado**, **Añejo**, and **Extra Añejo**.
@@ -34,7 +34,7 @@ There are many different classifications of tequila that describe the length of 
     - Unaged or rested for less than 60 days
     - Clear
     - Crisper tastes with more raw flavours
-    - Great for mixing, and if you love sharper tastes
+    - Great for mixing and if you love sharper tastes
 2. **Reposado**
     - Aged between 2 and 12 months
     - Light golden hue
@@ -68,7 +68,7 @@ The differences in each barrel makes the taste of every bottle of Tequila unique
 The aging process itself can influence the final taste of the tequila in so many different ways.  If you’re a fan of American liquor, Tequila can be a great way to find those same vanilla, caramel flavours, but transformed, or offer you a world of exploration.
 
 ## Cooking the Agave
-After the agave is harvested, they must be cooked to convert its starches into fermentable sugars.  This process can have a HUGE impact in the final flavour, and texture of the Tequila.  Some are sought after for being traditional and artisanal, and others are avoided due to their industrial nature:
+After the agave is harvested, they must be cooked to convert its starches into fermentable sugars.  This process can have a HUGE impact in the final flavour, and texture of the Tequila.  Some are sought after for being traditional and artisanal, and others are avoided due to their industrial nature.
 
 ### Smoke Pit
 
@@ -78,7 +78,7 @@ This is the most traditional way to cook agave.  A large smoke pit is dug in the
 
 ### Stone Oven
 
-This is the traditional way to cook agave for tequila.  The agave are piled into a large brick oven, which is then heated for 24-48 hours to slowly release the agave sugars.  This results in a sweet, caramelized, roasted flavour tones, and retains much of the agave’s natural characteristics.  This is a really popular for more premium 
+This is the traditional way to cook agave for tequila.  The agave are piled into a large brick oven, which is then heated for 24-48 hours to slowly release the agave sugars.  This results in a sweet, caramelized, roasted flavour tones, and retains much of the agave’s natural characteristics.  This is a really popular method for more premium batches of Tequila.
 
 ### Autoclave
 
