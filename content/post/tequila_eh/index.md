@@ -2,7 +2,7 @@
 title: "Tequila Eh?"
 description: A quick guide for Canadians wanting to explore a tasty alternative to American liquor.
 date: 2025-02-05T20:29:35-05:00
-image: 
+image: "agave_field.webp"
 math: 
 license: 
 tags: [
@@ -19,9 +19,12 @@ draft: false
 ---
 Well, here we are.  Boycotting American products eh?  If you drink a lot of American liquor, it might feel a little bitter (with an alcoholic aftertaste) to be losing something you have enjoyed for a long time.  Why not try tequila?  Tequila is an often misunderstood drink don’t you know...  It’s seen as a party drink that is meant to lubricate you for socialization as quickly as possible, or to be mixed away into a fruity drink.  Although there’s no wrong way to enjoy this great drink, many tequila enthusiasts prefer to enjoy tequila by sipping slowly and appreciating the finer details—as you would with a fine wine.  If you choose the right bottles, you might even find the same tones and flavours you are already familiar with in American liquor such as: Bourbon, or Tennessee whisky.
 
+![Different bottles of tequila with varying degrees of golden hues](tequila_bottles.webp)
+
 ## Basics
 Tequila comes from the Tequila region in Jalisco Mexico.  It comes from the agave plant, which looks like a huge overgrown pineapple:
 
+![A farmer shucking a large agave, preparing it for making Tequila](agave_shucking.webp)
 
 The long process of growing and tending agave plants, kicks off the production of tequila.  It can take up to 7 years for agave to reach maturity.  After they are harvested, the **aging**, **cooking**, and **distillation** processes produce the drink we are interested in: Tequila!  Differences in these processes are what make every bottle of tequila unique.  
 
@@ -48,8 +51,14 @@ There are many different classifications of tequila that describe the length of 
     - Often special distillations with much river and complex tastes
     - Sometimes made in smaller batches with a more artisanal approach
 
+I usually like to keep a Reposado around, for my nights in with my partner, or just to enjoy with a fancy meal.  It's a great balance between economy, and more complex tastes!  One of my favourite bottles of Tequila, is the Mi Campo Reposado, which you can find here: [Tequila Matchmaker](https://www.tequilamatchmaker.com/agave_spirits/6446-tequila-mi-campo-reposado)
+
+The site I linked, is "Tequila Matchmaker", one of my favourite sites to find information about different bottles of Tequila.  I highly recommend you use it when considering what bottle you want to buy.  I found that the Mi Campo Reposado, is that it is aged in wine barrels from this site—which I wouldn't have known otherwise.  As you may know, the nature of the barrel which it is aged within can have a significant impact on the Tequila's final taste.
+
 ## It's All About Aging
 Tequila is aged in oak barrels.  It is the tastes of the barrel that is infused with the tequila as it is aged.  In fact, many batches of tequila are often aged in American Bourbon barrels—like ones used to produce Jack Daniels.  So if you are a fan of American liquor, you might want to consider tequila aged in barrels used for your favourite drinks!
+
+![Barrels filled with tequila, stacked in rows](barrels.webp)
 
 The differences in each barrel makes the taste of every bottle of Tequila unique:
 - **Type of Oak**: Usually, either European oak, or American oak is used for Tequila barrels.  The type of oak used can infuse different flavours into the final product.  European oak is generally more delicate, spicy and fruity, whereas American oak can impart more vanilla and caramel tones.
@@ -64,6 +73,8 @@ After the agave is harvested, they must be cooked to convert its starches into f
 ### Smoke Pit
 
 This is the most traditional way to cook agave.  A large smoke pit is dug in the ground where the agaves are piled with charcoals.  This process takes multiple days to complete.  It infuses the best smoky flavours out there.  However, it is not a popular method of cooking agaves for Tequila since it’s so slow.  You will have to look harder if you’re looking for this, or branch out to Mezcal (a type of distilled drink of which Tequila is a subset).  
+
+![agave next a big fire muahahaha](burning_ahhh.webp)
 
 ### Stone Oven
 
@@ -89,6 +100,8 @@ Traditionally, most tequila was distilled in copper pots.  The copper reacts wit
 
 ### Stainless Steel Pot
 The modern alternative is the stainless steel pot.  Stainless steel pots requires less frequent cleaning, making it a more economical and popular option.  This doesn’t react with the sulphur compounds in the same way, but can produce a cleaner taste.  However not all stainless steel pots are made the same!  Some contain copper elements inside in order to retain some of the benefits from the traditional method.
+
+![A distillation column, the most modern and industrial process for distilling Tequila](distillation_column.webp)
 
 ### Distillation Column
 If you come from the Alberta oil industry like me, you might recognize the use of a column in the oil refinement process.  The same theory applies here!  The compounds within the agave mixture are separated as the steam moves through the column and cools.  The higher boiling point compounds condense first and are separated.   This is the most modern method of distillation, and unlike with copper or steel pots that need to be run batch by batch, the distillation column can be theoretically run 24/7.  However, that means the distiller has to sacrifice the finer control offered by more traditional methods.
