@@ -51,9 +51,9 @@ There are many different classifications of tequila that describe the length of 
     - Often special distillations with much river and complex tastes
     - Sometimes made in smaller batches with a more artisanal approach
 
-I usually like to keep a Reposado around, for my nights in with my partner, or just to enjoy with a fancy meal.  It's a great balance between economy, and more complex tastes!  One of my favourite bottles of Tequila, is the Mi Campo Reposado, which you can find here: [Tequila Matchmaker](https://www.tequilamatchmaker.com/agave_spirits/6446-tequila-mi-campo-reposado)
+I usually like to keep a Reposado around for my nights in with my partner, or just to enjoy with a fancy meal.  It's a great balance between economy, and more complex tastes!  One of my favourite bottles of Tequila is the Mi Campo Reposado, which you can find here: [Tequila Matchmaker](https://www.tequilamatchmaker.com/agave_spirits/6446-tequila-mi-campo-reposado)
 
-The site I linked, is "Tequila Matchmaker", one of my favourite sites to find information about different bottles of Tequila.  I highly recommend you use it when considering what bottle you want to buy.  I found that the Mi Campo Reposado, is that it is aged in wine barrels from this site—which I wouldn't have known otherwise.  As you may know, the nature of the barrel which it is aged within can have a significant impact on the Tequila's final taste.
+The site I linked, is "Tequila Matchmaker", one of my favourite sites to find information about different bottles of Tequila.  I highly recommend you use it when considering what bottle you want to buy.  I found that the Mi Campo Reposado  is aged in wine barrels from this site—which I wouldn't have known otherwise.  As you may know, the nature of the barrel which it is aged within can have a significant impact on the Tequila's final taste.
 
 ## It's All About Aging
 Tequila is aged in oak barrels.  It is the tastes of the barrel that is infused with the tequila as it is aged.  In fact, many batches of tequila are often aged in American Bourbon barrels—like ones used to produce Jack Daniels.  So if you are a fan of American liquor, you might want to consider tequila aged in barrels used for your favourite drinks!
@@ -86,7 +86,7 @@ Here comes industrialization!  Autoclaves for the agave cooking process are thes
 
 ### Diffuser
 
-More industrialization is the answer to everything right?  Diffusers are an even more industrial process, much further removed from even the Autoclave.  These are huge machines that extract the agave sugars through high pressure water blasts, and often times acid plus enzyme mixtures that extract the sugars from the agave fibres without any cooking!
+More industrialization is the answer to everything right?  Diffusers are an even more industrial process, much further removed from tradition than even the Autoclave.  These are huge machines that extract the agave sugars through high pressure water blasts, and often times acid plus enzyme mixtures that extract the sugars from the agave fibres without any cooking!
 
 It’s up to you to choose between these processes.  However, you may want to avoid diffusers since they are often criticized for over-industrialization and producing unnatural flavours compared to more traditional methods.  If you’re looking for affordable options, you will most likely be choosing agave cooked through the autoclave method.  Otherwise, if you’re looking for that one “special” bottle, you will want to look for brick oven and smoke pit options.
 
