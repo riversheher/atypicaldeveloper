@@ -37,7 +37,3 @@ I have two names, "River", which you can call me by, and “易涵” (yihan) wh
 I never went to a fancy school, or even did exceptionally well in school.  I didn't found any cool clubs, or complete any fancy projects in school.  I always looked up to people who did and wished I could do the same.  My self doubt was strong during this time, and I felt like an imposter every day.  Through a lot of introspection and self development, I learned and accepted my averageness. Nowadays I feel pretty comfortable being average.
 
 I constantly seek lessons from both ancient and modern spiritual texts and apply them in my life.  I'm always searching for opportunities to have meaningful experiences that satisfy my nerd-dom and curiosity!  This blog is meant to share these experiences with you and in doing so, making them more meaningful along the way.
-
-### Professional Portfolio
-
-If you're interested in learning more about me as a professional, you can find my portfoloio at [www.riversheher.me](https://www.riversheher.me).
