@@ -1,7 +1,7 @@
 ---
 title: "The Demon in the Mirror: Valentine Nightmare"
 description: How a nightmare about a chase that never ends, taught me about love, self-doubt, self-confidence, and introspection.
-date: 2025-02-14T21:15:57-05:00
+date: 2025-02-12T19:00:57-05:00
 image: 
 math: 
 license: 
