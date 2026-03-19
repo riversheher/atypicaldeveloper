@@ -5,7 +5,6 @@ date: 2024-02-16T16:26:59+07:00
 image: "icon_siam_riverview.jpg"
 math: false
 license: true
-hidden: false
 comments: false
 draft: false
 tags: [

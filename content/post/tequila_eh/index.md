@@ -13,7 +13,6 @@ tags: [
 categories: [
     "Opinion"
 ]
-hidden: false
 comments: false
 draft: false
 ---

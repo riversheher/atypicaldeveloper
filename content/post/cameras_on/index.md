@@ -13,7 +13,6 @@ tags: [
 categories: [
     "Work"
 ]
-hidden: false
 comments: false
 draft: false
 ---

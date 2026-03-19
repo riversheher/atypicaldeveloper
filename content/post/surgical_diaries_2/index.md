@@ -5,7 +5,6 @@ date: 2024-03-23T20:39:07+07:00
 image: "lumphini.JPG"
 math: false
 license: true
-hidden: false
 comments: false
 draft: false
 tags: [
