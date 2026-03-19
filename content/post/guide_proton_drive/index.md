@@ -6,7 +6,7 @@ image:
 math: 
 license: 
 comments: false
-draft: false
+draft: true
 build:
     list: always    # Change to "never" to hide the page from the list
 tags: [
