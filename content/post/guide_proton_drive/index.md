@@ -1,6 +1,6 @@
 ---
 title: "From Discord to Drive: Securing Your Images"
-description: Why your "private" Discord uploads aren't actually private.  Here's how to fix it in 9 minutes
+description: Why your private Discord uploads aren't actually private.  Here's how to fix it in 9 minutes.
 date: 2026-03-19T01:49:26-04:00
 image: privacy-please.jpg
 math: 
