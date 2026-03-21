@@ -68,7 +68,7 @@ This makes total sense from Discord’s point of view.  It’s a public messagin
 3. Select “Copy Link”
 4. Paste that link in your web browser, and see what comes up!
 
-![Clicking here will copy the image's link to your clipboard.  Which you can paste into your browser.](copylink.png)
+![Clicking here will copy the image's link to your clipboard.  You can paste it into your browser!](copylink.png)
 
 That’s your picture!  Anyone can see it.  For sharing images, this is worse than the Snapchat privacy concerns ever were.
 
@@ -93,7 +93,7 @@ Most users reasonably assume their attachments are somewhat secure, especially w
 Proton Drive flips the script on cloud storage, focusing on privacy first.  Here’s what makes it different:
 - **End-to-End Encryption (E2EE)** — Files are encrypted on your device, before they are sent to Proton Drive.
 - **Zero-Access Architecture** — Proton can’t see, scan, audit, your files.  They literally don’t have the encryption keys to decrypt them.
-- Based in Switzerland — Proton is based in Switzerland, which has much stronger privacy protections than the United States.  
+- **Based in Switzerland** — Proton is based in Switzerland, which has much stronger privacy protections than the United States.  
 - **Open Source** — Proton software is open source.  They are regularly audited by third party privacy and security watchdogs to ensure their software is as secure as they say it is.  You can take a [look yourself](https://github.com/ProtonDriveApps) too!
 
 When you upload a file on Proton, you don’t need to trust that their interests are aligned with yours because the architecture itself prevents them from viewing your files. If they tried to look at your files, they would find a bunch of unintelligible ones and zeros.
@@ -180,4 +180,4 @@ This guide focused on Proton, but it’s really the effort that counts.  Proton 
 
 **Stay safe and private!**
 
-![](cool.png)
+![Big smiling emoji throwing up the peace sign.  How I imagine I look.](cool.png)
