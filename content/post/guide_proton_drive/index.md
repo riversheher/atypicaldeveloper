@@ -1,8 +1,8 @@
 ---
 title: "From Discord to Drive: Securing Your Images"
-description: Why your "private" Discord uploads aren't actually private.  Here's how to fix it in 9 minutes
+description: Why your private Discord uploads aren't actually private.  Here's how to fix it in 9 minutes.
 date: 2026-03-19T01:49:26-04:00
-image: 
+image: privacy-please.jpg
 math: 
 license: 
 comments: false
@@ -29,7 +29,7 @@ Here's the thing: it usually doesn't.
 
 Before we dive into how to use Proton Drive properly, let's talk about why you might want to think twice about using Google Drive, Dropbox, Discord, or similar services for sensitive files.
 
-Cloud storage isn’t a magical black box.  Cloud storage is basically a fancy way of saying: someone else’s computer.  There is some extra software that supposedly protects your files, but how can we be sure?  What if this other person has different priorities than you? What if they want to use your files to train AI, send you ads, or to make sure you’re not uploading copyrighted content?
+Cloud storage isn’t a magical black box.  Cloud storage is basically a fancy way of saying "someone else’s computer".  There is some extra software that supposedly protects your files, but how can we be sure?  What if this other person has different priorities than you? What if they want to use your files to train AI, send you ads, or to make sure you’re not uploading copyrighted content?
 
 All of a sudden your files don’t seem so secure after all.
 
@@ -44,6 +44,8 @@ When you upload to most mainstream services:
 If the company maintains access to your files, this is also a vector for malicious actors to gain access to your files too.  Therefore, it’s not just the cloud storage service you need to trust, you need to trust the people who may gain access to your files maliciously.  That could be anyone!
 
 ## Case Study: Discord
+
+![Discord App, White Background](discord-app-white.jpg)
 
 Discord is convenient, exciting, and where many younger people organize their social lives.  Gone are the days of Skype, Google Meet, Instagram group chats, Facebook Messenger, Snapchat, or SMS.  Discord has become a one size fits all for a lot of people.  And for good reason!  It’s convenient, and offers great features for the social lives of young people.  
 
@@ -66,7 +68,7 @@ This makes total sense from Discord’s point of view.  It’s a public messagin
 3. Select “Copy Link”
 4. Paste that link in your web browser, and see what comes up!
 
-**IMAGE PLACEHOLDER**
+![Clicking here will copy the image's link to your clipboard.  You can paste it into your browser!](copylink.png)
 
 That’s your picture!  Anyone can see it.  For sharing images, this is worse than the Snapchat privacy concerns ever were.
 
@@ -86,10 +88,12 @@ Most users reasonably assume their attachments are somewhat secure, especially w
 
 # Enter Proton Drive
 
+![Proton Drive promotional material!](proton-drive.webp)
+
 Proton Drive flips the script on cloud storage, focusing on privacy first.  Here’s what makes it different:
 - **End-to-End Encryption (E2EE)** — Files are encrypted on your device, before they are sent to Proton Drive.
 - **Zero-Access Architecture** — Proton can’t see, scan, audit, your files.  They literally don’t have the encryption keys to decrypt them.
-- Based in Switzerland — Proton is based in Switzerland, which has much stronger privacy protections than the United States.  
+- **Based in Switzerland** — Proton is based in Switzerland, which has much stronger privacy protections than the United States.  
 - **Open Source** — Proton software is open source.  They are regularly audited by third party privacy and security watchdogs to ensure their software is as secure as they say it is.  You can take a [look yourself](https://github.com/ProtonDriveApps) too!
 
 When you upload a file on Proton, you don’t need to trust that their interests are aligned with yours because the architecture itself prevents them from viewing your files. If they tried to look at your files, they would find a bunch of unintelligible ones and zeros.
@@ -103,25 +107,31 @@ If you don’t have an account yet, head to [proton.me/drive](https://proton.me/
 ### Step 1: Upload Your Files
 
 1. Open [Proton Drive](https://drive.proton.me/) in your browser, or download the mobile app (both iOS and Android)
-2. Click the **Upload** button, or drag your files directly into the window
-3. Wait for the upload to finish.  You should see a green checkmark when it’s done!
+2. Click the **New** button on the left side bar and click the **Upload** button, or drag your files directly into the window
+4. Wait for the upload to finish.  You should see a green checkmark when it’s done!
 
 Tip: You can upload entire folders, not just individual files.
 
-**IMAGE PLACEHOLDER**
+![Where to find the upload button on Proton Drive.](upload-button.png)
 
 ### Step 2: Create Shareable Links
 
 1. Right click the file you want to share (or tap the three dots on the right side of the file on mobile)
-2. Select S**hare** (or **Manage Access** if you are on mobile)
+2. Select **Share** (or **Manage Access** if you are on mobile)
 3. Activate the **Public Link** toggle (or the **Share with Anyone** toggle on mobile)
 4. Copy the link!
+
+![Click here to go into the share menu](share-button.png)
+
+![How to get your shareable link](share-menu.png)
 
 Here is where things get interesting…
 
 ### Step 3: Locking Down Your Links
 
 By default, Proton Drive links are private.  However there are many options for you to add extra layers of protection.
+
+![Click here to configure advanced settings!](advanced-settings.png)
 
 #### Password Protection
 
@@ -136,6 +146,8 @@ This will require anyone with the link to also enter a password in order to view
 - Creating a strong password.  Think 12+ characters with numbers, letters, and symbols.
 - Send the password in a different channel than the link – This makes it more difficult to find both the link and the password, and to propagate it to unwanted third parties.
 
+![](set-password.png)
+
 #### Expiration Dates
 
 Be realistic about how long access allowed for.  If you’re sending a picture to a discord channel, chances are there’s no need for it to be shared forever.  An expiration time of a week will make it so that your images will stop being shared, and your privacy is maintained without you having to think about it.
@@ -143,6 +155,8 @@ Be realistic about how long access allowed for.  If you’re sending a picture t
 - Toggle on “Expiry”
 - Select a date when this link will expire
 - Click “Save changes”
+
+![](expiry.png)
 
 ### Managing Shares
 
@@ -165,3 +179,5 @@ Proton Drive isn’t perfect.  At the end of the day, you, as the individual are
 This guide focused on Proton, but it’s really the effort that counts.  Proton is my choice, but you may have different preferences.  That’s okay.  Making an effort puts you head an shoulders above the default choices out there.
 
 **Stay safe and private!**
+
+![Big smiling emoji throwing up the peace sign.  How I imagine I look.](cool.png)
