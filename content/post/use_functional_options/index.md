@@ -61,7 +61,7 @@ These situations could have been avoided in one simple way: _Using functional op
 
 ## What are _Functional Options_?
 
-The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure, making use of one of Go's best features: first-class functions. Each option is a closure that mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with a pile of defaults, an enemy in a procedurally generated game, or whatever your mind desires.
+The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure, making use of one of Go's best features: first-class functions. Each option mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with a pile of defaults, an enemy in a procedurally generated game, or whatever your mind desires.
 
 The end product is a constructor that uses composition like this:
 
@@ -81,7 +81,7 @@ req := NewChatRequest(
 )
 ```
 
-It solves the issue of setting defaults without the need for complex configuration structs. It predicts future extension by baking it into design of the constructor on day 1. It allows for composability over many successive instances. All this while maintaining readability and simplicity. Your future self and your AI assistant will thank you.
+It solves the issue of setting defaults without the need for complex configuration structs. It predicts future extension by baking it into design of the constructor on day 1. It allows for composability over many successive instances. All this while maintaining readability and simplicity.
 
 To achieve this, we define the constructor signature to accept an arbitrary number of options:
 
@@ -172,11 +172,11 @@ func NewChatRequest(opts ...Option) (*ChatRequest, error) {
 }
 ```
 
-Now, when the next set of features rolls in, the complexity of your project doesn't have to grow with it. With functional options, you've managed the complexity creep and dodged the thing we all dread most... opening a repository and feeling your eyes go blank
+Now, when the next set of features rolls in, the complexity of your project doesn't have to grow with it. With functional options, you've managed the complexity creep and dodged the thing we all dread most... opening a repository and feeling your eyes go blank.
 
 ## Why It Wins
 
-There are a few key benefits worth taking a closer look at:
+There are a few key benefits worth a closer look:
 - Extensibility
 - Readability
 - Defaults
@@ -200,7 +200,9 @@ func NewChatRequest(opts ...Option) *ChatRequest {
 }
 ```
 
-Now your PM comes back and tells you to add support for temperature and a whole host of other fields that need defaults. Well, good news! Because you used functional options, it's as simple as writing a new option and composing it into your constructor.
+Now your PM comes back and tells you to add support for temperature and a whole host of other fields that need defaults. 
+
+Well, good news! Because you used functional options, it's as simple as writing a new option and composing it into your constructor.
 
 ```go
 type ChatRequest struct {
@@ -234,7 +236,7 @@ NewChatRequest(WithMessage("hi"))
 NewChatRequest(WithModel("glm-5.3-flash"), WithTemperature(0.9))
 ```
 
-This isn't just extensible, it's readable. When you land in a codebase, you can see exactly what's being set explicitly. And it lets us set defaults while sidestepping the "unset values default to 0" gotcha you hit with config structs.
+This isn't just extensible, it's readable. When you land in a codebase, you can see how the values are being mutated explicitly. It lets us set defaults while sidestepping the "unset values default to 0" gotcha you hit with config structs.
 
 Using a config struct, a user may set the model choice and message but choose to use the default for retry attempts:
 
@@ -271,9 +273,9 @@ NewChatRequest(WithMessage("hi"))
 NewChatRequest(WithMessage("hi"), WithRetries(0))
 ```
 
-Our default lives right there in the constructor, and the user can call the option to change it. No more playing with zeros or extra flags.
+Our default lives right there in the constructor and the user can add options to change it. No more playing with zeros or extra flags.
 
-Finally, it's composable and reusable. When you need to create a lot of the same thing with small variations, this really wins. You can build a slice of options, apply them to a set of constructors, then append to it for the next one:
+Finally, it's composable and reusable. When you need to create a lot of the same thing with small variations, this really wins. You can build a slice of options to use as a base, then append to it when creating new instances. This is especially useful when you have a lot of requests that share the same configuration, but need to tweak one or two fields.
 
 ```go
 // A reusable bundle — every request gets these
@@ -303,7 +305,7 @@ func newCreativeRequest(msg string) *ChatRequest {
 - Workers, Handlers, Requests, etc.
 
 **TESTS TESTS TESTS**
-- Within tests, you're constantly constructing test data. With unit tests, this can mean a lot of default values turning one knob at a time. This is one of the best use cases for this pattern.
+- Within tests, you're constantly constructing test data. With unit tests, this can mean a lot of default values while turning one knob at a time. This is one of the best use cases for this pattern.
 
 ```go
 // A small fixture factory — internal to the test package
@@ -369,4 +371,4 @@ As we all know, a lot of code is generated by LLMs these days. They default to t
 
 The tools to fix this already exist! Most agentic harnesses like Claude Code, OpenCode, and GitHub Copilot support agent skills. These are pieces of context injected into our prompts or agent loops that tell our agents how to act.
 
-I've created a simple skill you can grab here: [Skill File](https://github.com/riversheher/atypicaldeveloper/blob/master/resources/downloadable/Agent_Skill_Functional_Options_Pattern.md)! You can add this to your own harness! dd it to your own harness! Another skill I highly recommend is the golang-pro skill from the popular claude-skills repo: [Github](https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro)
+I've created a simple skill you can grab here: [Skill File](https://github.com/riversheher/atypicaldeveloper/blob/master/resources/downloadable/Agent_Skill_Functional_Options_Pattern.md)! You can add this to your own harness! Another skill I highly recommend is the golang-pro skill from the popular claude-skills repo: [Github](https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro)
