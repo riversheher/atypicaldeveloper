@@ -13,14 +13,24 @@ categories: [
     "Work"
 ]
 comments: false
-draft: true
+draft: false
 ---
-You open a repository with a spark in your eye, ready to make your first contribution of the day. Your gaze lands on the first line of code, then the second, the third, and before you make it to the fourth, the laptop screen closes. Reality sinks in. This is not the repository you signed up for.
+You open a repository with a spark in your eye, ready to make your first contribution of the day. Your gaze lands on the first line of code, then the second, the third, and before you make it to the fourth, the laptop screen slams closed. Reality sinks in; this is not the repository you signed up for.
 
-We've all been there. Code quality is in short supply, especially at your workplace. Nod if you've seen these before: overloaded/telescoping constructors, endless configs with ambiguous defaults, or unidiomatic builder patterns.
+We've all been there. Code quality is in short supply, seemingly especially so at your workplace. Nod if you've seen these before: overloaded/telescoping constructors, endless configs with ambiguous defaults, or unidiomatic builder patterns.
 
 ```go
 // 😵 the "eyes glaze over" special
+func NewRequestSimple(model string, msg string) *Request {
+    r := &Request{Model: model, Message: msg}
+    r.Debug = false
+    r.Temperature = 1.0
+    r.Retries = 1
+    r.Timeout = 100 * time.Second
+    return r
+}
+
+
 func NewRequest(model string, msg string, debug bool) *Request {
     r := &Request{Model: model, Message: msg}
     r.Debug = debug
@@ -47,13 +57,13 @@ req := NewRequestFull("deepseek-v4-flash", "hi", true, 1.0, 1, 100)
 
 Most of these issues come from codebases that have been extended, modified, and maintained over the years. In fact, the codebase might have seemed clean and simple at the time of the first commit. Maybe that 50 line config was just 5 lines two years ago. Maybe there was only one clean constructor back then too. Or maybe you just came over from Java and were new to Go back then, and now you're stuck with some design decisions you made five years ago. Now, with the advent of agentic coding, we have a whole new vector for these issues to surface: your friendly neighbourhood coding harness.
 
-These situations could have been avoided in one simple way: _Using _functional options_._
+These situations could have been avoided in one simple way: _Using functional options_.
 
 ## What are _Functional Options_?
 
-The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure, making use of a core feature in Go: first-class functions. Each option, is a closure that mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with many default fields, an enemy in a procedurally generated game, or whatever your mind desires.
+The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure making use of a core feature in Go: first-class functions. Each option is a closure that mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with many default fields, an enemy in a procedurally generated game, or whatever your mind desires.
 
-The end product, is a constructor that uses composition like this:
+The end product is a constructor that uses composition like this:
 
 ```go
 // The end result — named decisions, not positional noise
@@ -71,7 +81,7 @@ req := NewChatRequest(
 )
 ```
 
-It solves the issue of setting defaults without the need for complex configuration structs. It predicts future extension by baking it into design of the constructor on day 1. It allows for composability over many successive instances. All this, while maintaining readability and simplicity. Your future self, and your AI assistant, will thank you.
+It solves the issue of setting defaults without the need for complex configuration structs. It predicts future extension by baking it into design of the constructor on day 1. It allows for composability over many successive instances. All this while maintaining readability and simplicity. Your future self and your AI assistant will thank you.
 
 In order to achieve this, we can define the constructor signature to accept an arbitrary amount of options:
 
@@ -82,7 +92,7 @@ func NewChatRequest(opts ...Option) *ChatRequest {
 }
 ```
 
-Then, within the constructor, we iterate through the options, applying each one to the struct we are composing:
+Then within the constructor, we iterate through the options, applying each one to the struct we are composing:
 
 ```go
 func NewChatRequest(opts ...Option) *ChatRequest {
