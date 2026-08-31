@@ -172,7 +172,7 @@ func NewChatRequest(opts ...Option) (*ChatRequest, error) {
 }
 ```
 
-Now, when the next set of features comes the complexity of your project does not need to grow with it. With _functional options_, you have effectively managed that complexity creep and avoided the thing we most dread... opening a repository and having our eyes go blank.
+Now, when the next set of features comes, the complexity of your project does not need to grow with it. With _functional options_, you have effectively managed that complexity creep and avoided the thing we most dread... opening a repository and having our eyes go blank.
 
 ## Why It Wins
 
@@ -182,7 +182,7 @@ There are a few key benefits worth taking a closer look at:
 - Defaults
 - Composability
 
-Lets say you define a simple data structure to represent the request body of your new service. For example, maybe in the beginning, all you needed to implement is: **model choice**, **input message**, and a **debug** flag that is defaulted to off:
+Lets say you define a simple data structure to represent the request body of your new service. For example, in the beginning, all you needed to implement was: **model choice**, **input message**, and a **debug** flag that is defaulted to off:
 
 ```go
 type ChatRequest struct {
@@ -254,7 +254,10 @@ How do we determine if the user wants a default amount of retries or genuinely 0
 
 ```go
 func NewChatRequest(opts ...Option) *ChatRequest {
-    req := &ChatRequest{Model: "deepseek-v4-flash", Retries: 3}   // the default lives here
+    req := &ChatRequest{
+        Model: "deepseek-v4-flash", 
+        Retries: 3
+    }   // the default lives here
     for _, opt := range opts {
         opt(req)
     }
