@@ -55,13 +55,13 @@ func NewRequestFull(model string, msg string, debug bool, temp float64, retries 
 req := NewRequestFull("deepseek-v4-flash", "hi", true, 1.0, 1, 100)
 ```
 
-Most of these issues come from codebases that have been extended, modified, and maintained over the years. In fact, the codebase might have seemed clean and simple at the time of the first commit. Maybe that 50 line config was just 5 lines two years ago. Maybe there was only one clean constructor back then too. Or maybe you just came over from Java and were new to Go back then, and now you're stuck with some design decisions you made five years ago. Now, with the advent of agentic coding, we have a whole new vector for these issues to surface: your friendly neighbourhood coding harness.
+Most of these issues come from codebases that have been extended, modified, and maintained over the years. In fact, the codebase might have seemed clean and simple at the time of the first commit. Maybe that 50 line config was just 5 lines two years ago. Maybe there was only one clean constructor back then too. Or maybe you just came over from Java and were new to Go back then — now you're stuck with some design decisions you made five years ago. With the rise of agentic coding, we have a whole new vector for these issues to surface: your friendly neighbourhood coding harness.
 
 These situations could have been avoided in one simple way: _Using functional options_.
 
 ## What are _Functional Options_?
 
-The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure making use of a core feature in Go: first-class functions. Each option is a closure that mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with many default fields, an enemy in a procedurally generated game, or whatever your mind desires.
+The _functional options_ pattern is a way of writing constructors with extensibility, readability, and usability in mind. The core of this pattern, as the name suggests, is the functional option. This is a closure, making use of one of Go's best features: first-class functions. Each option is a closure that mutates the structure we are composing. That might be a server configuration, a complex response/request body, a data entry with a pile of defaults, an enemy in a procedurally generated game, or whatever your mind desires.
 
 The end product is a constructor that uses composition like this:
 
@@ -83,7 +83,7 @@ req := NewChatRequest(
 
 It solves the issue of setting defaults without the need for complex configuration structs. It predicts future extension by baking it into design of the constructor on day 1. It allows for composability over many successive instances. All this while maintaining readability and simplicity. Your future self and your AI assistant will thank you.
 
-In order to achieve this, we can define the constructor signature to accept an arbitrary amount of options:
+To achieve this, we define the constructor signature to accept an arbitrary number of options:
 
 ```go
 // The constructor accepts an arbitrary number of Option values
@@ -126,7 +126,7 @@ func WithRetries(n int) Option {
 }
 ```
 
-Or a complex example where one change may cascade into multi-line changes due to the API spec.
+Or a complex example where one change cascades into a handful of others because of the API spec:
 
 ```go
 // WithModel is more than a setter — it knows the API spec and
@@ -172,7 +172,7 @@ func NewChatRequest(opts ...Option) (*ChatRequest, error) {
 }
 ```
 
-Now, when the next set of features comes, the complexity of your project does not need to grow with it. With _functional options_, you have effectively managed that complexity creep and avoided the thing we most dread... opening a repository and having our eyes go blank.
+Now, when the next set of features rolls in, the complexity of your project doesn't have to grow with it. With functional options, you've managed the complexity creep and dodged the thing we all dread most... opening a repository and feeling your eyes go blank
 
 ## Why It Wins
 
@@ -200,7 +200,7 @@ func NewChatRequest(opts ...Option) *ChatRequest {
 }
 ```
 
-Now, your PM comes back and tells you to add support for temperature and a variety of other fields that require default values. Well good news, because you used _functional options_, its as simple as creating an option and composing it into your constructor.
+Now your PM comes back and tells you to add support for temperature and a whole host of other fields that need defaults. Well, good news! Because you used functional options, it's as simple as writing a new option and composing it into your constructor.
 
 ```go
 type ChatRequest struct {
@@ -234,7 +234,7 @@ NewChatRequest(WithMessage("hi"))
 NewChatRequest(WithModel("glm-5.3-flash"), WithTemperature(0.9))
 ```
 
-This is not only extensible, it is also readable. When you enter a codebase you can easily see exactly what is being set explicitly. Secondarily, this allows us to set defaults by bypassing the "unset values default to 0" issue that can occur with configuration using structs.
+This isn't just extensible, it's readable. When you land in a codebase, you can see exactly what's being set explicitly. And it lets us set defaults while sidestepping the "unset values default to 0" gotcha you hit with config structs.
 
 Using a config struct, a user may set the model choice and message but choose to use the default for retry attempts:
 
@@ -250,7 +250,7 @@ cfg := Config{Model: "deepseek-v4-flash", Message: "hi"}
 // You can't tell — they're the same value.
 ```
 
-How do we determine if the user wants a default amount of retries or genuinely 0? There are workarounds, but the use of _functional options_ completely bypasses this concern:
+How do we tell whether the user wants the default number of retries, or genuinely zero? There are workarounds, but functional options completely sidestep that concern:
 
 ```go
 func NewChatRequest(opts ...Option) *ChatRequest {
@@ -271,9 +271,9 @@ NewChatRequest(WithMessage("hi"))
 NewChatRequest(WithMessage("hi"), WithRetries(0))
 ```
 
-Our default is explicitly defined within the constructor, and the user can explicitly use the functional option to change it. No more playing with zeros or extra flags.
+Our default lives right there in the constructor, and the user can call the option to change it. No more playing with zeros or extra flags.
 
-Lastly, it is composable and reusable. When you need to create many of the same structure with small variations, this wins. You can create a slice of options to apply to a set of constructors then append to it when applying to another constructor easily:
+Finally, it's composable and reusable. When you need to create a lot of the same thing with small variations, this really wins. You can build a slice of options, apply them to a set of constructors, then append to it for the next one:
 
 ```go
 // A reusable bundle — every request gets these
@@ -338,7 +338,7 @@ func TestUserCanExport(t *testing.T) {
 
 ## When It's Not the Best Choice
 
-When you need compile-time required fields, _functional options_ may be lacking. As their name suggests, they are options. In this case, we can use a hybrid approach with positional arguments for required fields and _functional options_ for others.
+When you need compile-time required fields, functional options can fall short. As the name says, they're options. In that case, you can use a hybrid: positional arguments for the required fields, and functional options for the rest.
 
 ```go
 // Required fields are positional; options handle the optional extras
@@ -359,14 +359,14 @@ func NewChatRequest(model, message string, opts ...Option) (*ChatRequest, error)
 req, err := NewChatRequest("deepseek-v4-flash", "hi", WithTimeout(10*time.Second))
 ```
 
-Furthermore, _functional options_ can introduce order dependent bugs. This risk is elevated when there are complex configuration requirements with dependencies between fields that are not easily separately composable. In this case, a config struct and a validation method may be the way to go.
+Furthermore, functional options can introduce order-dependent bugs. That risk climbs when you have complex requirements with dependencies between fields that don't compose cleanly on their own. In that case, a config struct with a validation method might be the way to go.
 
-The bottom line is, _functional options_ aren't a one size fits all solution. You still have to use that software engineering brain! However, in a lot of cases, this pattern does fit the bill, you just have to be careful when it doesn't.
+The bottom line: functional options aren't a one-size-fits-all solution. You still have to use that software engineering brain! But in a lot of cases this pattern does fit the bill; you just have to be careful when it doesn't.
 
 ## Teach Your AI
 
-As we all know, a lot of code is being generated by LLMs nowadays. These default to their training, but also the context of your codebase. Sometimes, this can lead to a compounding of issues if the code quality in the codebase is already struggling. Other times, our AI assistants may try to "helpfully" refactor our codebase to our prompting, and its not until much later that we realize that was probably a mistake.
+As we all know, a lot of code is generated by LLMs these days. They default to their training, but also to the context of your codebase. Sometimes that leads to a compounding of issues if the codebase's quality is already struggling. Other times, our AI assistants "helpfully" refactor our codebase in response to a prompt, and it's not until much later that we realize that was probably a mistake.
 
-The tools we can use to fix all this already exist! Most harnesses we use for agentic coding such as Claude Code, OpenCode, or Github Copilot, support agent skills! These are pieces of context that are injected into our prompts or agentic loops that instruct our agents how to act.
+The tools to fix this already exist! Most agentic harnesses like Claude Code, OpenCode, and GitHub Copilot support agent skills. These are pieces of context injected into our prompts or agent loops that tell our agents how to act.
 
-I have created a simple skill that you can find here: [Skill File](https://github.com/riversheher/atypicaldeveloper/blob/master/resources/downloadable/Agent_Skill_Functional_Options_Pattern.md)! You can add this to your own harness! Another skill that I highly suggest is the golang-pro skill found in the popular claude-skills repository! You can find that here: [Github](https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro)
+I've created a simple skill you can grab here: [Skill File](https://github.com/riversheher/atypicaldeveloper/blob/master/resources/downloadable/Agent_Skill_Functional_Options_Pattern.md)! You can add this to your own harness! dd it to your own harness! Another skill I highly recommend is the golang-pro skill from the popular claude-skills repo: [Github](https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro)
